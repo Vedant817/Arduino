@@ -12,9 +12,9 @@ void setup()
 
 void loop()
 {  
-  for(x=0;x<=9;x++)
+  for(int x=0;x<=9;x++)
   {   
-    //digitalWrite(input[5],1);
+    //digitalWrite(input[5],1); 1->HIGH 0->LOW
     digitalWrite(input[6],1);
     digitalWrite(input[5],1);
     digitalWrite(input[4],0);
@@ -24,7 +24,7 @@ void loop()
     digitalWrite(input[3],(x/8)%2);
     digitalWrite(input[4],1);
     
-    for(y=0;y<10;y++)
+    for(int y=0;y<10;y++)
   	{    
       // digitalWrite(input[6],1);
       	digitalWrite(input[6],1);
@@ -35,7 +35,7 @@ void loop()
         digitalWrite(input[3],(y/8)%2);
         digitalWrite(input[5],1);	        
 	  
-      for(z=0;z<=9;z++)
+      for(int z=0;z<=9;z++)
       {    
         digitalWrite(input[6],0);
         digitalWrite(input[0],z%2);
